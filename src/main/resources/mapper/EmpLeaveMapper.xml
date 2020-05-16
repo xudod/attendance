@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xudod.attendance.emp_leave.domain.mapper.EmpLeaveMapper">
+  <resultMap id="BaseResultMap" type="com.xudod.attendance.emp_leave.domain.entity.po.EmpLeave">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="leave_name" jdbcType="VARCHAR" property="leaveName" />
+    <result column="bpm_serial_num" jdbcType="VARCHAR" property="bpmSerialNum" />
+    <result column="emp_mdm_code" jdbcType="VARCHAR" property="empMdmCode" />
+    <result column="leave_date" jdbcType="VARCHAR" property="leaveDate" />
+    <result column="leave_status" jdbcType="INTEGER" property="leaveStatus" />
+    <result column="leave_start_time" jdbcType="VARCHAR" property="leaveStartTime" />
+    <result column="leave_end_time" jdbcType="VARCHAR" property="leaveEndTime" />
+    <result column="leave_content" jdbcType="VARCHAR" property="leaveContent" />
+    <result column="is_show" jdbcType="INTEGER" property="isShow" />
+    <result column="is_archive" jdbcType="INTEGER" property="isArchive" />
+    <result column="is_cancel" jdbcType="INTEGER" property="isCancel" />
+    <result column="instance_id" jdbcType="VARCHAR" property="instanceId" />
+    <result column="sequence" jdbcType="INTEGER" property="sequence" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="public_able" jdbcType="VARCHAR" property="publicAble" />
+    <result column="shared_able" jdbcType="VARCHAR" property="sharedAble" />
+    <result column="inf_status" jdbcType="VARCHAR" property="infStatus" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="version" jdbcType="INTEGER" property="version" />
+    <result column="deleted" jdbcType="VARCHAR" property="deleted" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="org_id" jdbcType="VARCHAR" property="orgId" />
+    <result column="app_id" jdbcType="VARCHAR" property="appId" />
+    <result column="client_type" jdbcType="VARCHAR" property="clientType" />
+    <result column="create_by" jdbcType="VARCHAR" property="createBy" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="modify_by" jdbcType="VARCHAR" property="modifyBy" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, leave_name, bpm_serial_num, emp_mdm_code, leave_date, leave_status, leave_start_time, 
+    leave_end_time, leave_content, is_show, is_archive, is_cancel, instance_id, sequence, 
+    remark, public_able, shared_able, inf_status, status, version, deleted, user_id, 
+    org_id, app_id, client_type, create_by, create_time, modify_by, modify_time
+  </sql>
+</mapper>

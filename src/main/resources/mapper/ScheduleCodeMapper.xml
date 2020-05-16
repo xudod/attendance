@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xudod.attendance.schedule_code.domain.mapper.ScheduleCodeMapper">
+  <resultMap id="BaseResultMap" type="com.xudod.attendance.schedule_code.domain.entity.po.ScheduleCode">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="schedule_code" jdbcType="VARCHAR" property="scheduleCode" />
+    <result column="schedule_name" jdbcType="VARCHAR" property="scheduleName" />
+    <result column="work_time_min" jdbcType="VARCHAR" property="workTimeMin" />
+    <result column="attend_time_to_day" jdbcType="VARCHAR" property="attendTimeToDay" />
+    <result column="schedule_front_day" jdbcType="VARCHAR" property="scheduleFrontDay" />
+    <result column="punch_times" jdbcType="VARCHAR" property="punchTimes" />
+    <result column="permit_min" jdbcType="VARCHAR" property="permitMin" />
+    <result column="late_min" jdbcType="VARCHAR" property="lateMin" />
+    <result column="wild_min" jdbcType="VARCHAR" property="wildMin" />
+    <result column="rest_type" jdbcType="VARCHAR" property="restType" />
+    <result column="work_time" jdbcType="VARCHAR" property="workTime" />
+    <result column="rest_time" jdbcType="VARCHAR" property="restTime" />
+    <result column="sequence" jdbcType="INTEGER" property="sequence" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="public_able" jdbcType="VARCHAR" property="publicAble" />
+    <result column="shared_able" jdbcType="VARCHAR" property="sharedAble" />
+    <result column="inf_status" jdbcType="VARCHAR" property="infStatus" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="version" jdbcType="INTEGER" property="version" />
+    <result column="deleted" jdbcType="VARCHAR" property="deleted" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="org_id" jdbcType="VARCHAR" property="orgId" />
+    <result column="app_id" jdbcType="VARCHAR" property="appId" />
+    <result column="client_type" jdbcType="VARCHAR" property="clientType" />
+    <result column="create_by" jdbcType="VARCHAR" property="createBy" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="modify_by" jdbcType="VARCHAR" property="modifyBy" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, schedule_code, schedule_name, work_time_min, attend_time_to_day, schedule_front_day, 
+    punch_times, permit_min, late_min, wild_min, rest_type, work_time, rest_time, sequence, 
+    remark, public_able, shared_able, inf_status, status, version, deleted, user_id, 
+    org_id, app_id, client_type, create_by, create_time, modify_by, modify_time
+  </sql>
+</mapper>

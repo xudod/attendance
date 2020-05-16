@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xudod.attendance.org.domain.mapper.OrgMapper">
+  <resultMap id="BaseResultMap" type="com.xudod.attendance.org.domain.entity.po.Org">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="mdm_code" jdbcType="VARCHAR" property="mdmCode" />
+    <result column="rank_code" jdbcType="VARCHAR" property="rankCode" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="telephone" jdbcType="VARCHAR" property="telephone" />
+    <result column="credit_code" jdbcType="VARCHAR" property="creditCode" />
+    <result column="industry" jdbcType="VARCHAR" property="industry" />
+    <result column="level" jdbcType="VARCHAR" property="level" />
+    <result column="charge_code" jdbcType="VARCHAR" property="chargeCode" />
+    <result column="registered_capital" jdbcType="VARCHAR" property="registeredCapital" />
+    <result column="legal_representative" jdbcType="VARCHAR" property="legalRepresentative" />
+    <result column="org_dimension" jdbcType="VARCHAR" property="org_dimension" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="effective_date_start" jdbcType="VARCHAR" property="effectiveDateStart" />
+    <result column="effective_date_end" jdbcType="VARCHAR" property="effectiveDateEnd" />
+    <result column="from_sys_hr_id" jdbcType="VARCHAR" property="fromSysHrId" />
+    <result column="from_sys_mdm_id" jdbcType="VARCHAR" property="fromSysMdmId" />
+    <result column="type_mark" jdbcType="VARCHAR" property="typeMark" />
+    <result column="charge_name" jdbcType="VARCHAR" property="chargeName" />
+    <result column="superior_id" jdbcType="VARCHAR" property="superiorId" />
+    <result column="superior_rank_code" jdbcType="VARCHAR" property="superiorRankCode" />
+    <result column="superior_code" jdbcType="VARCHAR" property="superiorCode" />
+    <result column="superior_name" jdbcType="VARCHAR" property="superiorName" />
+    <result column="produce_code" jdbcType="VARCHAR" property="produceCode" />
+    <result column="produce_name" jdbcType="VARCHAR" property="produceName" />
+    <result column="area" jdbcType="VARCHAR" property="area" />
+    <result column="sequence" jdbcType="INTEGER" property="sequence" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="public_able" jdbcType="VARCHAR" property="publicAble" />
+    <result column="shared_able" jdbcType="VARCHAR" property="sharedAble" />
+    <result column="inf_status" jdbcType="VARCHAR" property="infStatus" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="version" jdbcType="INTEGER" property="version" />
+    <result column="deleted" jdbcType="VARCHAR" property="deleted" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="org_id" jdbcType="VARCHAR" property="orgId" />
+    <result column="app_id" jdbcType="VARCHAR" property="appId" />
+    <result column="client_type" jdbcType="VARCHAR" property="clientType" />
+    <result column="create_by" jdbcType="VARCHAR" property="createBy" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="modify_by" jdbcType="VARCHAR" property="modifyBy" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, mdm_code, rank_code, name, telephone, credit_code, industry, level, charge_code, 
+    registered_capital, legal_representative, org_dimension, type, effective_date_start, effective_date_end, 
+    from_sys_hr_id, from_sys_mdm_id, type_mark, charge_name, superior_id, superior_rank_code, 
+    superior_code, superior_name, produce_code, produce_name, area, sequence, remark, 
+    public_able, shared_able, inf_status, status, version, deleted, user_id, org_id, 
+    app_id, client_type, create_by, create_time, modify_by, modify_time
+  </sql>
+</mapper>

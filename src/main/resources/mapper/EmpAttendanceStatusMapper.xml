@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xudod.attendance.emp_attendance_status.domain.mapper.EmpAttendanceStatusMapper">
+  <resultMap id="BaseResultMap" type="com.xudod.attendance.emp_attendance_status.domain.entity.po.EmpAttendanceStatus">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="emp_mdm_code" jdbcType="VARCHAR" property="empMdmCode" />
+    <result column="schedule_code" jdbcType="VARCHAR" property="scheduleCode" />
+    <result column="schedule_name" jdbcType="VARCHAR" property="scheduleName" />
+    <result column="work_time_min" jdbcType="VARCHAR" property="workTimeMin" />
+    <result column="attend_time_to_day" jdbcType="VARCHAR" property="attendTimeToDay" />
+    <result column="schedule_front_day" jdbcType="VARCHAR" property="scheduleFrontDay" />
+    <result column="punch_times" jdbcType="VARCHAR" property="punchTimes" />
+    <result column="permit_min" jdbcType="VARCHAR" property="permitMin" />
+    <result column="late_min" jdbcType="VARCHAR" property="lateMin" />
+    <result column="wild_min" jdbcType="VARCHAR" property="wildMin" />
+    <result column="rest_type" jdbcType="VARCHAR" property="restType" />
+    <result column="work_time" jdbcType="VARCHAR" property="workTime" />
+    <result column="rest_time" jdbcType="VARCHAR" property="restTime" />
+    <result column="attend_status" jdbcType="INTEGER" property="attendStatus" />
+    <result column="attend_day" jdbcType="VARCHAR" property="attendDay" />
+    <result column="day_name" jdbcType="VARCHAR" property="dayName" />
+    <result column="part_attend_status" jdbcType="VARCHAR" property="partAttendStatus" />
+    <result column="all_attend_time" jdbcType="VARCHAR" property="allAttendTime" />
+    <result column="att_num_times" jdbcType="VARCHAR" property="attNumTimes" />
+    <result column="forgate_att_add_times" jdbcType="VARCHAR" property="forgateAttAddTimes" />
+    <result column="aa_limit_time" jdbcType="VARCHAR" property="aaLimitTime" />
+    <result column="aa_time" jdbcType="VARCHAR" property="aaTime" />
+    <result column="aa_pre_time" jdbcType="VARCHAR" property="aaPreTime" />
+    <result column="aa_ch_time" jdbcType="VARCHAR" property="aaChTime" />
+    <result column="aa_status" jdbcType="VARCHAR" property="aaStatus" />
+    <result column="aa_min" jdbcType="VARCHAR" property="aaMin" />
+    <result column="aa_need_sign" jdbcType="VARCHAR" property="aaNeedSign" />
+    <result column="bb_limit_time" jdbcType="VARCHAR" property="bbLimitTime" />
+    <result column="bb_time" jdbcType="VARCHAR" property="bbTime" />
+    <result column="bb_pre_time" jdbcType="VARCHAR" property="bbPreTime" />
+    <result column="bb_ch_time" jdbcType="VARCHAR" property="bbChTime" />
+    <result column="bb_status" jdbcType="VARCHAR" property="bbStatus" />
+    <result column="bb_min" jdbcType="VARCHAR" property="bbMin" />
+    <result column="bb_need_sign" jdbcType="VARCHAR" property="bbNeedSign" />
+    <result column="cc_limit_time" jdbcType="VARCHAR" property="ccLimitTime" />
+    <result column="cc_time" jdbcType="VARCHAR" property="ccTime" />
+    <result column="cc_pre_time" jdbcType="VARCHAR" property="ccPreTime" />
+    <result column="cc_ch_time" jdbcType="VARCHAR" property="ccChTime" />
+    <result column="cc_status" jdbcType="VARCHAR" property="ccStatus" />
+    <result column="cc_min" jdbcType="VARCHAR" property="ccMin" />
+    <result column="cc_need_sign" jdbcType="VARCHAR" property="ccNeedSign" />
+    <result column="dd_limit_time" jdbcType="VARCHAR" property="ddLimitTime" />
+    <result column="dd_time" jdbcType="VARCHAR" property="ddTime" />
+    <result column="dd_pre_time" jdbcType="VARCHAR" property="ddPreTime" />
+    <result column="dd_ch_time" jdbcType="VARCHAR" property="ddChTime" />
+    <result column="dd_status" jdbcType="VARCHAR" property="ddStatus" />
+    <result column="dd_min" jdbcType="VARCHAR" property="ddMin" />
+    <result column="dd_need_sign" jdbcType="VARCHAR" property="ddNeedSign" />
+    <result column="ee_limit_time" jdbcType="VARCHAR" property="eeLimitTime" />
+    <result column="ee_time" jdbcType="VARCHAR" property="eeTime" />
+    <result column="ee_pre_time" jdbcType="VARCHAR" property="eePreTime" />
+    <result column="ee_ch_time" jdbcType="VARCHAR" property="eeChTime" />
+    <result column="ee_status" jdbcType="VARCHAR" property="eeStatus" />
+    <result column="ee_min" jdbcType="VARCHAR" property="eeMin" />
+    <result column="ee_need_sign" jdbcType="VARCHAR" property="eeNeedSign" />
+    <result column="ff_limit_time" jdbcType="VARCHAR" property="ffLimitTime" />
+    <result column="ff_time" jdbcType="VARCHAR" property="ffTime" />
+    <result column="ff_pre_time" jdbcType="VARCHAR" property="ffPreTime" />
+    <result column="ff_ch_time" jdbcType="VARCHAR" property="ffChTime" />
+    <result column="ff_status" jdbcType="VARCHAR" property="ffStatus" />
+    <result column="ff_min" jdbcType="VARCHAR" property="ffMin" />
+    <result column="ff_need_sign" jdbcType="VARCHAR" property="ffNeedSign" />
+    <result column="gg_limit_time" jdbcType="VARCHAR" property="ggLimitTime" />
+    <result column="gg_time" jdbcType="VARCHAR" property="ggTime" />
+    <result column="gg_pre_time" jdbcType="VARCHAR" property="ggPreTime" />
+    <result column="gg_ch_time" jdbcType="VARCHAR" property="ggChTime" />
+    <result column="gg_status" jdbcType="VARCHAR" property="ggStatus" />
+    <result column="gg_min" jdbcType="VARCHAR" property="ggMin" />
+    <result column="gg_need_sign" jdbcType="VARCHAR" property="ggNeedSign" />
+    <result column="hh_limit_time" jdbcType="VARCHAR" property="hhLimitTime" />
+    <result column="hh_time" jdbcType="VARCHAR" property="hhTime" />
+    <result column="hh_pre_time" jdbcType="VARCHAR" property="hhPreTime" />
+    <result column="hh_ch_time" jdbcType="VARCHAR" property="hhChTime" />
+    <result column="hh_status" jdbcType="VARCHAR" property="hhStatus" />
+    <result column="hh_min" jdbcType="VARCHAR" property="hhMin" />
+    <result column="hh_need_sign" jdbcType="VARCHAR" property="hhNeedSign" />
+    <result column="leave_times" jdbcType="VARCHAR" property="leaveTimes" />
+    <result column="leave_type1" jdbcType="VARCHAR" property="leaveType1" />
+    <result column="leave_stime1" jdbcType="VARCHAR" property="leaveStime1" />
+    <result column="leave_etime1" jdbcType="VARCHAR" property="leaveEtime1" />
+    <result column="leave_lon_day1" jdbcType="VARCHAR" property="leaveLonDay1" />
+    <result column="leave_type2" jdbcType="VARCHAR" property="leaveType2" />
+    <result column="leave_stime2" jdbcType="VARCHAR" property="leaveStime2" />
+    <result column="leave_etime2" jdbcType="VARCHAR" property="leaveEtime2" />
+    <result column="leave_lon_day2" jdbcType="VARCHAR" property="leaveLonDay2" />
+    <result column="leave_type3" jdbcType="VARCHAR" property="leaveType3" />
+    <result column="leave_stime3" jdbcType="VARCHAR" property="leaveStime3" />
+    <result column="leave_etime3" jdbcType="VARCHAR" property="leaveEtime3" />
+    <result column="leave_lon_day3" jdbcType="VARCHAR" property="leaveLonDay3" />
+    <result column="btrip_times" jdbcType="VARCHAR" property="btripTimes" />
+    <result column="btrip_type1" jdbcType="VARCHAR" property="btripType1" />
+    <result column="btrip_stime1" jdbcType="VARCHAR" property="btripStime1" />
+    <result column="btrip_etime1" jdbcType="VARCHAR" property="btripEtime1" />
+    <result column="btrip_lon_day1" jdbcType="VARCHAR" property="btripLonDay1" />
+    <result column="btrip_type2" jdbcType="VARCHAR" property="btripType2" />
+    <result column="btrip_stime2" jdbcType="VARCHAR" property="btripStime2" />
+    <result column="btrip_etime2" jdbcType="VARCHAR" property="btripEtime2" />
+    <result column="btrip_lon_day2" jdbcType="VARCHAR" property="btripLonDay2" />
+    <result column="btrip_type3" jdbcType="VARCHAR" property="btripType3" />
+    <result column="btrip_stime3" jdbcType="VARCHAR" property="btripStime3" />
+    <result column="btrip_etime3" jdbcType="VARCHAR" property="btripEtime3" />
+    <result column="btrip_lon_day3" jdbcType="VARCHAR" property="btripLonDay3" />
+    <result column="sequence" jdbcType="INTEGER" property="sequence" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="public_able" jdbcType="VARCHAR" property="publicAble" />
+    <result column="shared_able" jdbcType="VARCHAR" property="sharedAble" />
+    <result column="inf_status" jdbcType="VARCHAR" property="infStatus" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="version" jdbcType="INTEGER" property="version" />
+    <result column="deleted" jdbcType="VARCHAR" property="deleted" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="org_id" jdbcType="VARCHAR" property="orgId" />
+    <result column="app_id" jdbcType="VARCHAR" property="appId" />
+    <result column="client_type" jdbcType="VARCHAR" property="clientType" />
+    <result column="create_by" jdbcType="VARCHAR" property="createBy" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="modify_by" jdbcType="VARCHAR" property="modifyBy" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, emp_mdm_code, schedule_code, schedule_name, work_time_min, attend_time_to_day, 
+    schedule_front_day, punch_times, permit_min, late_min, wild_min, rest_type, work_time, 
+    rest_time, attend_status, attend_day, day_name, part_attend_status, all_attend_time, 
+    att_num_times, forgate_att_add_times, aa_limit_time, aa_time, aa_pre_time, aa_ch_time, 
+    aa_status, aa_min, aa_need_sign, bb_limit_time, bb_time, bb_pre_time, bb_ch_time, 
+    bb_status, bb_min, bb_need_sign, cc_limit_time, cc_time, cc_pre_time, cc_ch_time, 
+    cc_status, cc_min, cc_need_sign, dd_limit_time, dd_time, dd_pre_time, dd_ch_time, 
+    dd_status, dd_min, dd_need_sign, ee_limit_time, ee_time, ee_pre_time, ee_ch_time, 
+    ee_status, ee_min, ee_need_sign, ff_limit_time, ff_time, ff_pre_time, ff_ch_time, 
+    ff_status, ff_min, ff_need_sign, gg_limit_time, gg_time, gg_pre_time, gg_ch_time, 
+    gg_status, gg_min, gg_need_sign, hh_limit_time, hh_time, hh_pre_time, hh_ch_time, 
+    hh_status, hh_min, hh_need_sign, leave_times, leave_type1, leave_stime1, leave_etime1, 
+    leave_lon_day1, leave_type2, leave_stime2, leave_etime2, leave_lon_day2, leave_type3, 
+    leave_stime3, leave_etime3, leave_lon_day3, btrip_times, btrip_type1, btrip_stime1, 
+    btrip_etime1, btrip_lon_day1, btrip_type2, btrip_stime2, btrip_etime2, btrip_lon_day2, 
+    btrip_type3, btrip_stime3, btrip_etime3, btrip_lon_day3, sequence, remark, public_able, 
+    shared_able, inf_status, status, version, deleted, user_id, org_id, app_id, client_type, 
+    create_by, create_time, modify_by, modify_time
+  </sql>
+  <select id="getUserScheduleByDateArea" parameterType="hashMap" resultMap="getUserScheduleByDateAreaResultMap">
+    select emp_mdm_code,id,attend_day,schedule_code
+<!--    <if test="dateList != null and dateList.size() > 0"> -->
+<!--   	 , -->
+<!--      <foreach collection="dateList" item="datestr" separator="," > -->
+<!--          max(case when attend_day = #{datestr} then schedule_code else '' end) "schedule_code" -->
+<!--      </foreach> -->
+<!--    </if> -->
+    from emp_attendance_status where
+    <if test="userAll != null and userAll.size() > 0">
+      emp_mdm_code in 
+      <foreach collection="userAll" item="item" separator="," open="(" close=")">
+        #{item.empMdmCode}
+      </foreach>
+      and
+    </if>
+    str_to_date(attend_day,'%Y-%m-%d') <![CDATA[ >= ]]> #{startDate}
+    and str_to_date(attend_day,'%Y-%m-%d') <![CDATA[ <= ]]> #{endDate}
+    ORDER BY emp_mdm_code, attend_day ASC
+  </select>
+  <resultMap id="getUserScheduleByDateAreaResultMap" type="com.xudod.attendance.emp_attendance_status.domain.entity.bo.UserScheduleSearchVo">
+    <result column="emp_mdm_code" jdbcType="VARCHAR" property="empMdmCode" />
+    <collection property="userScheduleSearchChildVoList" ofType="com.xudod.attendance.emp_attendance_status.domain.entity.bo.UserScheduleSearchChildVo">
+   	  <id column="id" jdbcType="VARCHAR" property="id" />
+      <result column="attend_day" jdbcType="VARCHAR" property="day" />
+      <result column="schedule_code" jdbcType="VARCHAR" property="scheduleCode" />
+    </collection>
+  </resultMap>
+  
+  <insert id="insertForeach" parameterType="java.util.List" useGeneratedKeys="false">
+    insert into emp_attendance_status
+	(id, emp_mdm_code, schedule_code, schedule_name, work_time_min, attend_time_to_day, 
+    schedule_front_day, punch_times, permit_min, late_min, wild_min, rest_type, work_time, 
+    rest_time, attend_status, attend_day, day_name, part_attend_status, all_attend_time, 
+    att_num_times, forgate_att_add_times, aa_limit_time, aa_time, aa_pre_time, aa_ch_time, 
+    aa_status, aa_min, aa_need_sign, bb_limit_time, bb_time, bb_pre_time, bb_ch_time, 
+    bb_status, bb_min, bb_need_sign, cc_limit_time, cc_time, cc_pre_time, cc_ch_time, 
+    cc_status, cc_min, cc_need_sign, dd_limit_time, dd_time, dd_pre_time, dd_ch_time, 
+    dd_status, dd_min, dd_need_sign, ee_limit_time, ee_time, ee_pre_time, ee_ch_time, 
+    ee_status, ee_min, ee_need_sign, ff_limit_time, ff_time, ff_pre_time, ff_ch_time, 
+    ff_status, ff_min, ff_need_sign, gg_limit_time, gg_time, gg_pre_time, gg_ch_time, 
+    gg_status, gg_min, gg_need_sign, hh_limit_time, hh_time, hh_pre_time, hh_ch_time, 
+    hh_status, hh_min, hh_need_sign, leave_times, leave_type1, leave_stime1, leave_etime1, 
+    leave_lon_day1, leave_type2, leave_stime2, leave_etime2, leave_lon_day2, leave_type3, 
+    leave_stime3, leave_etime3, leave_lon_day3, btrip_times, btrip_type1, btrip_stime1, 
+    btrip_etime1, btrip_lon_day1, btrip_type2, btrip_stime2, btrip_etime2, btrip_lon_day2, 
+    btrip_type3, btrip_stime3, btrip_etime3, btrip_lon_day3, sequence, remark, public_able, 
+    shared_able, inf_status, status, version, deleted, user_id, org_id, app_id, client_type, 
+    create_by, create_time, modify_by, modify_time)
+	values
+	<foreach collection="empAttendanceStatusList" item="item" index="index" separator=",">
+	(
+		#{item.id},#{item.emp_mdm_code},#{item.schedule_code},#{item.schedule_name},
+		#{item.work_time_min},#{item.attend_time_to_day},
+		#{item.schedule_front_day},	#{item.punch_times},
+		#{item.permit_min},	#{item.late_min},#{item.wild_min},#{item.rest_type},
+		#{item.work_time},#{item.rest_time},#{item.attend_status},
+		#{item.attend_day},#{item.day_name},#{item.part_attend_status},
+		#{item.all_attend_time},#{item.att_num_times},#{item.forgate_att_add_times},
+		#{item.aa_limit_time},#{item.aa_time},#{item.aa_pre_time},#{item.aa_ch_time},
+		#{item.aa_status},#{item.aa_min},#{item.aa_need_sign},#{item.bb_limit_time},
+		#{item.bb_time},#{item.bb_pre_time},#{item.bb_ch_time},#{item.bb_status},
+		#{item.bb_min},#{item.bb_need_sign},#{item.cc_limit_time},#{item.cc_time},#{item.cc_pre_time},
+		#{item.cc_ch_time},#{item.cc_status},#{item.cc_min},#{item.cc_need_sign},#{item.dd_limit_time},
+		#{item.dd_time},#{item.dd_pre_time},#{item.dd_ch_time},#{item.dd_status},#{item.dd_min},
+		#{item.dd_need_sign},#{item.ee_limit_time},#{item.ee_time},#{item.ee_pre_time},#{item.ee_ch_time},
+		#{item.ee_status},#{item.ee_min},#{item.ee_need_sign},#{item.ff_limit_time},#{item.ff_time},
+		#{item.ff_pre_time},#{item.ff_ch_time},#{item.ff_status},#{item.ff_min},#{item.ff_need_sign},
+		#{item.gg_limit_time},#{item.gg_time},#{item.gg_pre_time},#{item.gg_ch_time},#{item.gg_status},
+		#{item.gg_min},#{item.gg_need_sign},#{item.hh_limit_time},#{item.hh_time},#{item.hh_pre_time},
+		#{item.hh_ch_time},#{item.hh_status},#{item.hh_min},#{item.hh_need_sign},#{item.leave_times},
+		#{item.leave_type1},#{item.leave_stime1},#{item.leave_etime1},#{item.leave_lon_day1},#{item.leave_type2},
+		#{item.leave_stime2},#{item.leave_etime2},#{item.leave_lon_day2},#{item.leave_type3},#{item.leave_stime3},
+		#{item.leave_etime3},#{item.leave_lon_day3},#{item.btrip_times},#{item.btrip_type1},#{item.btrip_stime1},
+		#{item.btrip_etime1},#{item.btrip_lon_day1},#{item.btrip_type2},#{item.btrip_stime2},#{item.btrip_etime2},
+		#{item.btrip_lon_day2},#{item.btrip_type3},#{item.btrip_stime3},#{item.btrip_etime3},#{item.btrip_lon_day3},
+		#{item.sequence},#{item.remark},#{item.public_able},#{item.shared_able},#{item.inf_status},
+		#{item.status},#{item.version},#{item.deleted},#{item.user_id},#{item.org_id},
+		#{item.app_id},#{item.client_type},#{item.create_by},#{item.create_time},#{item.modify_by},
+		#{item.modify_time}
+	)
+    </foreach>		
+  </insert>
+  <delete id="schedulebatchdel" parameterType="java.lang.String">
+    delete from emp_attendance_status
+    where id in 
+    <foreach collection="idStr" item="item" separator="," open="(" close=")">
+      #{item}
+    </foreach>
+  </delete>
+  
+  
+  
+<!--   <select id="getUserSchedule" resultMap="getUserScheduleResultMap"> -->
+<!-- 	SELECT id, emp_mdm_code, schedule_code, attend_day, day_name FROM emp_attendance_status -->
+<!-- 	WHERE str_to_date(attend_day,'%Y-%m-%d') <![CDATA[ >= ]]> cast(#{startDate} as date)  -->
+<!--     and str_to_date(attend_day,'%Y-%m-%d') <![CDATA[ <= ]]> cast(#{endDate} as date)) -->
+<!--   </select> -->
+<!--   <resultMap id="getUserScheduleResultMap" type="com.xudod.attendance.emp_attendance_status.domain.entity.bo.UserScheduleMidleResBo"> -->
+<!--     <id column="id" jdbcType="VARCHAR" property="id" /> -->
+<!--     <result column="emp_mdm_code" jdbcType="VARCHAR" property="empMdmCode" /> -->
+<!--     <result column="schedule_code" jdbcType="VARCHAR" property="scheduleCode" /> -->
+<!--     <result column="attend_day" jdbcType="VARCHAR" property="attendDay" /> -->
+<!--     <result column="day_name" jdbcType="VARCHAR" property="dayName" /> -->
+<!--   </resultMap> -->
+</mapper>

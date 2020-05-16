@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xudod.attendance.att_report_101.domain.mapper.AttReport101Mapper">
+  <resultMap id="BaseResultMap" type="com.xudod.attendance.att_report_101.domain.entity.po.AttReport101">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="emp_mdm_code" jdbcType="VARCHAR" property="empMdmCode" />
+    <result column="att_year" jdbcType="VARCHAR" property="attYear" />
+    <result column="att_month" jdbcType="VARCHAR" property="attMonth" />
+    <result column="position_title" jdbcType="VARCHAR" property="positionTitle" />
+    <result column="standard_rank" jdbcType="VARCHAR" property="standardRank" />
+    <result column="att_day" jdbcType="VARCHAR" property="attDay" />
+    <result column="rest_day" jdbcType="VARCHAR" property="restDay" />
+    <result column="ten_min_times_in" jdbcType="VARCHAR" property="tenMinTimesIn" />
+    <result column="ten_min_times_out" jdbcType="VARCHAR" property="tenMinTimesOut" />
+    <result column="lack_att_times" jdbcType="VARCHAR" property="lackAttTimes" />
+    <result column="absence" jdbcType="VARCHAR" property="absence" />
+    <result column="att_1" jdbcType="VARCHAR" property="att1" />
+    <result column="att_2" jdbcType="VARCHAR" property="att2" />
+    <result column="att_3" jdbcType="VARCHAR" property="att3" />
+    <result column="att_4" jdbcType="VARCHAR" property="att4" />
+    <result column="att_5" jdbcType="VARCHAR" property="att5" />
+    <result column="att_6" jdbcType="VARCHAR" property="att6" />
+    <result column="att_7" jdbcType="VARCHAR" property="att7" />
+    <result column="att_8" jdbcType="VARCHAR" property="att8" />
+    <result column="att_9" jdbcType="VARCHAR" property="att9" />
+    <result column="att_10" jdbcType="VARCHAR" property="att10" />
+    <result column="att_11" jdbcType="VARCHAR" property="att11" />
+    <result column="att_12" jdbcType="VARCHAR" property="att12" />
+    <result column="att_13" jdbcType="VARCHAR" property="att13" />
+    <result column="att_14" jdbcType="VARCHAR" property="att14" />
+    <result column="att_15" jdbcType="VARCHAR" property="att15" />
+    <result column="att_16" jdbcType="VARCHAR" property="att16" />
+    <result column="att_17" jdbcType="VARCHAR" property="att17" />
+    <result column="att_18" jdbcType="VARCHAR" property="att18" />
+    <result column="att_19" jdbcType="VARCHAR" property="att19" />
+    <result column="att_20" jdbcType="VARCHAR" property="att20" />
+    <result column="att_21" jdbcType="VARCHAR" property="att21" />
+    <result column="att_22" jdbcType="VARCHAR" property="att22" />
+    <result column="att_23" jdbcType="VARCHAR" property="att23" />
+    <result column="att_24" jdbcType="VARCHAR" property="att24" />
+    <result column="att_25" jdbcType="VARCHAR" property="att25" />
+    <result column="att_26" jdbcType="VARCHAR" property="att26" />
+    <result column="att_27" jdbcType="VARCHAR" property="att27" />
+    <result column="att_28" jdbcType="VARCHAR" property="att28" />
+    <result column="att_29" jdbcType="VARCHAR" property="att29" />
+    <result column="att_30" jdbcType="VARCHAR" property="att30" />
+    <result column="att_31" jdbcType="VARCHAR" property="att31" />
+    <result column="emp_name" jdbcType="VARCHAR" property="empName" />
+    <result column="forgate_att_add_times" jdbcType="VARCHAR" property="forgateAttAddTimes" />
+    <result column="leave_type_hun" jdbcType="VARCHAR" property="leaveTypeHun" />
+    <result column="leave_type_shi" jdbcType="VARCHAR" property="leaveTypeShi" />
+    <result column="leave_type_nian" jdbcType="VARCHAR" property="leaveTypeNian" />
+    <result column="leave_type_tiao" jdbcType="VARCHAR" property="leaveTypeTiao" />
+    <result column="leave_type_bing" jdbcType="VARCHAR" property="leaveTypeBing" />
+    <result column="leave_type_tiaoxiu" jdbcType="VARCHAR" property="leaveTypeTiaoxiu" />
+    <result column="leave_type_chanjian" jdbcType="VARCHAR" property="leaveTypeChanjian" />
+    <result column="leave_type_fenmian" jdbcType="VARCHAR" property="leaveTypeFenmian" />
+    <result column="leave_type_peichan" jdbcType="VARCHAR" property="leaveTypePeichan" />
+    <result column="leave_type_qita" jdbcType="VARCHAR" property="leaveTypeQita" />
+    <result column="leave_type_sang" jdbcType="VARCHAR" property="leaveTypeSang" />
+    <result column="leave_type_gongshang" jdbcType="VARCHAR" property="leaveTypeGongshang" />
+    <result column="leave_type_buru" jdbcType="VARCHAR" property="leaveTypeBuru" />
+    <result column="sequence" jdbcType="INTEGER" property="sequence" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="public_able" jdbcType="VARCHAR" property="publicAble" />
+    <result column="shared_able" jdbcType="VARCHAR" property="sharedAble" />
+    <result column="inf_status" jdbcType="VARCHAR" property="infStatus" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="version" jdbcType="INTEGER" property="version" />
+    <result column="deleted" jdbcType="VARCHAR" property="deleted" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="org_id" jdbcType="VARCHAR" property="orgId" />
+    <result column="app_id" jdbcType="VARCHAR" property="appId" />
+    <result column="client_type" jdbcType="VARCHAR" property="clientType" />
+    <result column="create_by" jdbcType="VARCHAR" property="createBy" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="modify_by" jdbcType="VARCHAR" property="modifyBy" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, emp_mdm_code, att_year, att_month, position_title, standard_rank, att_day, rest_day, 
+    ten_min_times_in, ten_min_times_out, lack_att_times, absence, att_1, att_2, att_3, 
+    att_4, att_5, att_6, att_7, att_8, att_9, att_10, att_11, att_12, att_13, att_14, 
+    att_15, att_16, att_17, att_18, att_19, att_20, att_21, att_22, att_23, att_24, att_25, 
+    att_26, att_27, att_28, att_29, att_30, att_31, emp_name, forgate_att_add_times, 
+    leave_type_hun, leave_type_shi, leave_type_nian, leave_type_tiao, leave_type_bing, 
+    leave_type_tiaoxiu, leave_type_chanjian, leave_type_fenmian, leave_type_peichan, 
+    leave_type_qita, leave_type_sang, leave_type_gongshang, leave_type_buru, sequence, 
+    remark, public_able, shared_able, inf_status, status, version, deleted, user_id, 
+    org_id, app_id, client_type, create_by, create_time, modify_by, modify_time
+  </sql>
+</mapper>

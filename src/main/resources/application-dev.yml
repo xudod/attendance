@@ -1,0 +1,44 @@
+server:
+  port: 11005
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka:eureka@127.0.0.1:10000/eureka/
+  instance:
+    prefer-ip-address: true
+spring:
+  profiles: dev
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: attendance
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.68.135:3306/attendance?serverTimezone=GMT%2B8&amp&useSSL=false&amp&nullCatalogMeansCurrent=true&amp&allowPublicKeyRetrieval=true
+    username: root
+    password: 111111
+  rabbitmq:
+    host: 192.168.68.139
+    virtual-host: tx_mail
+    username: xudod
+    password: 111111
+  redis:
+    host: 192.168.68.139
+    port: 6379
+    password: 111111
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+  type-aliases-package: com.xudod.attendance.*.domain.mapper  # 注意：对应实体类的路径
+logging:
+  level:
+    com.xudod.attendance: debug
+feign:
+  client:
+    config:                                         
+    # 默认为所有的feign client做配置(注意和上例github-client是同级的)
+      default:                                      
+        connectTimeout: 5000                        # 连接超时时间
+        readTimeout: 5000                           # 读超时时间设置 
+snowid:
+  workerId: 1     #工作机器ID
+  datacenterId: 2   # 序列号

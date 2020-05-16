@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xudod.attendance.schedule_code.domain.mapper.ScheduleTimeMapper">
+  <resultMap id="BaseResultMap" type="com.xudod.attendance.schedule_code.domain.entity.po.ScheduleTime">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="schedule_code" jdbcType="VARCHAR" property="scheduleCode" />
+    <result column="att_seqence" jdbcType="INTEGER" property="attSeqence" />
+    <result column="sign_in_time" jdbcType="VARCHAR" property="signInTime" />
+    <result column="sign_out_time" jdbcType="VARCHAR" property="signOutTime" />
+    <result column="strat_time" jdbcType="VARCHAR" property="stratTime" />
+    <result column="end_time" jdbcType="VARCHAR" property="endTime" />
+    <result column="strat_time_elastic" jdbcType="VARCHAR" property="stratTimeElastic" />
+    <result column="end_time_elastic" jdbcType="VARCHAR" property="endTimeElastic" />
+    <result column="need_sign_in" jdbcType="VARCHAR" property="needSignIn" />
+    <result column="need_sign_out" jdbcType="VARCHAR" property="needSignOut" />
+    <result column="across" jdbcType="VARCHAR" property="across" />
+    <result column="sequence" jdbcType="INTEGER" property="sequence" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="public_able" jdbcType="VARCHAR" property="publicAble" />
+    <result column="shared_able" jdbcType="VARCHAR" property="sharedAble" />
+    <result column="inf_status" jdbcType="VARCHAR" property="infStatus" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="version" jdbcType="INTEGER" property="version" />
+    <result column="deleted" jdbcType="VARCHAR" property="deleted" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="org_id" jdbcType="VARCHAR" property="orgId" />
+    <result column="app_id" jdbcType="VARCHAR" property="appId" />
+    <result column="client_type" jdbcType="VARCHAR" property="clientType" />
+    <result column="create_by" jdbcType="VARCHAR" property="createBy" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="modify_by" jdbcType="VARCHAR" property="modifyBy" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, schedule_code, att_seqence, sign_in_time, sign_out_time, strat_time, end_time, 
+    strat_time_elastic, end_time_elastic, need_sign_in, need_sign_out, across, sequence, 
+    remark, public_able, shared_able, inf_status, status, version, deleted, user_id, 
+    org_id, app_id, client_type, create_by, create_time, modify_by, modify_time
+  </sql>
+</mapper>
